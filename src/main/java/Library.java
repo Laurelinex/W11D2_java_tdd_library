@@ -26,4 +26,10 @@ public class Library {
         }
         return true;
     }
+
+    public void removeBookFromLibrary(Book book) {
+        if(this.countBooks() > 0) {
+            this.books.remove(book);
+        }
+    }
 }

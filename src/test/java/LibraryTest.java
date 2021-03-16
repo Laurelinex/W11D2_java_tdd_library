@@ -50,4 +50,11 @@ public class LibraryTest {
         assertEquals(true, library.isFull());
     }
 
+    @Test
+    public void canRemoveBookIfAtLeast1BookInLibrary() {
+        library.addBookToLibrary(book1);
+        library.removeBookFromLibrary(book1);
+        assertEquals(0, library.countBooks());
+    }
+
 }
